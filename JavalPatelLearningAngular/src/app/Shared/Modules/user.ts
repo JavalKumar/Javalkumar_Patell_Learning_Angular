@@ -1,5 +1,8 @@
 export interface User {
     id: number;
-    companyName: "Company";
-    model: "Model"
+    companyName: string;
+    model: string;
+    price: number;
+    isPetrol: boolean; 
+
 }
