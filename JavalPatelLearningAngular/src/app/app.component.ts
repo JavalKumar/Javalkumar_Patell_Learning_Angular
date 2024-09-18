@@ -19,5 +19,8 @@ export class AppComponent {
   user5 : User = {id: 5, companyName: "Lamborghini", model: "Urus",price: 190000, isPetrol: false }
   user6 : User = {id: 6, companyName: "Lamborghini", model: "Countach",price: 1200000, isPetrol: true }
 
+  carList: User[] = [this.user1,this.user2,this.user3,this.user4,this.user5,this.user6];
+
+
 }
 

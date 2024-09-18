@@ -1,4 +1,28 @@
-<!-- <h1>this is javal</h1> -->
-<div class="container">
-    <button></button>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Automobile Dealership</h1>
+        <div *ngForOf = "let users of carList" class="user-card">
+            <h1>Car no:{{users.id}}</h1>
+            <h3>Company: {{users.companyName}}</h3>
+            <p>Model: {{users.model}}</p>
+            <p>Price: {{users.price}}</p>
+            <p>Works on Petrol?:{{users.isPetrol}}</p>
+        </div>
+
+        <!-- <div *ngSwitch = "let users of userList"></div>
+            {{users.id}}
+            {{users.companyName}}
+            {{users.model}}
+            {{users.price}}
+            {{users.isPetrol}}
+        </div> -->
+    </div>
+</body>
+</html>
