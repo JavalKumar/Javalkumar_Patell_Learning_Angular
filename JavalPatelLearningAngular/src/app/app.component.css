@@ -1,0 +1,21 @@
+.container{
+    padding: 20px;
+}
+
+.user-card{
+    padding:2%;
+    background-image: linear-gradient(to right, #74EBD5 , #e0279f);
+    /* background-color:violet; */
+    display: inline-block;
+    border-color: black;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+.container > h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    font-weight: bold;
+}
+
