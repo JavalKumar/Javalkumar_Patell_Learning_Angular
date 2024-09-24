@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { User } from '../Shared/Modules/user';
 
 @Component({
@@ -10,5 +10,5 @@ import { User } from '../Shared/Modules/user';
   styleUrl: './cars-list.component.css'
 })
 export class CarsListComponent {
-  @input() carList?:User;
+  @Input() carList?:User;
 }
