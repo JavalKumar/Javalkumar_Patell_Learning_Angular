@@ -1,0 +1,18 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    /* width: 100%; */
+    text-align: center;
+    background-color: peachpuff;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+}
+tr{
+    width: 100%;
+}
+
