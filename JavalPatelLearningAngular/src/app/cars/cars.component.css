@@ -12,6 +12,16 @@ td {
     padding: 10px;
     border: 2px solid black;
 }
+th {
+    text-decoration: underline;
+    font-size: 20px;
+    /* width: 100%; */
+    text-align: center;
+    background-color: lightsalmon;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+}
 tr{
     width: 100%;
 }

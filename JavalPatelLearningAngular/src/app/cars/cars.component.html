@@ -1,6 +1,13 @@
-
+<h1><strong>JP Automobile</strong></h1>
 <table>
     <tbody>
+        <tr>
+            <th>ID</th>
+            <th>Company Name</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Petrol</th>
+        </tr>
         <tr *ngFor="let car of carList" 
         (click)="carSelect(car)">
             
