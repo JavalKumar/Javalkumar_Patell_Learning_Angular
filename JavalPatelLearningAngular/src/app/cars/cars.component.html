@@ -1,11 +1,14 @@
 <h1>CARS</h1>
-
-<tbody>
-    <tr *ngFor="let car of carList">
-        <td>{{car.id}}</td>
-        <td>{{car.companyName}}</td>
-        <td>{{car.model}}</td>
-        <td>{{car.price}}</td>
-        <td>{{car.isPetrol}}</td>
-    </tr>
-</tbody>
+<table>
+    <tbody>
+        <tr *ngFor="let car of carList" 
+        (click)="(carList)">
+            
+            <td>{{car.id}}</td>
+            <td>{{car.companyName}}</td>
+            <td>{{car.model}}</td>
+            <td>{{car.price}}</td>
+            <td>{{car.isPetrol ? 'Yes' : 'No'}}</td>
+        </tr>
+    </tbody>
+</table>
