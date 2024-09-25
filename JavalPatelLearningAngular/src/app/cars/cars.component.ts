@@ -1,11 +1,12 @@
 import { NgForOf } from '@angular/common';
 import { Component } from '@angular/core';
 import { User } from '../Shared/Modules/user';
+import { CarsListComponent } from "../cars-list/cars-list.component";
 
 @Component({
   selector: 'app-cars',
   standalone: true,
-  imports: [NgForOf],
+  imports: [NgForOf, CarsListComponent],
   templateUrl: './cars.component.html',
   styleUrl: './cars.component.css'
 })
@@ -20,4 +21,11 @@ export class CarsComponent {
   car6 : User = {id: 6, companyName: "Lamborghini", model: "Countach",price: 1200000, isPetrol: true }
 
   carList: User[] = [this.car1,this.car2,this.car3,this.car4,this.car5,this.car6]
+
+  carSelected?: User;
+
+  carSelect(carList: User):void{
+    this.carSelected = carList;
+  }
+
 }

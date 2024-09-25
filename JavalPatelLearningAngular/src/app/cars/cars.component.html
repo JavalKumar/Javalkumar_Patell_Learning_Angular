@@ -2,7 +2,7 @@
 <table>
     <tbody>
         <tr *ngFor="let car of carList" 
-        (click)="(carList)">
+        (click)="carSelect(car)">
             
             <td>{{car.id}}</td>
             <td>{{car.companyName}}</td>
@@ -12,3 +12,4 @@
         </tr>
     </tbody>
 </table>
+<app-cars-list [carList]="carSelected"></app-cars-list>
