@@ -7,10 +7,11 @@ import { CarsComponent } from "./cars/cars.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgForOf, JsonPipe, CarsComponent],
+  imports: [RouterOutlet, NgForOf, JsonPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'Automobile';
   // user1 : User = {id: 1, companyName: "Lamborghini", model: "Huracane",price: 200000, isPetrol: true }
@@ -21,7 +22,5 @@ export class AppComponent {
   // user6 : User = {id: 6, companyName: "Lamborghini", model: "Countach",price: 1200000, isPetrol: true }
 
   // carList: User[] = [this.user1,this.user2,this.user3,this.user4,this.user5,this.user6];
-
-
 }
 
