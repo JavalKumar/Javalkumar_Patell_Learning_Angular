@@ -8,7 +8,7 @@ import { CarsListComponent } from "../cars-list/cars-list.component";
   standalone: true,
   imports: [NgForOf, CarsListComponent],
   templateUrl: './cars.component.html',
-  styleUrls: './cars.component.css'
+  styleUrl: './cars.component.css'
 })
 export class CarsComponent {
   tableColumn : string[]=['Id', 'Company', 'Modle', 'Price', 'isPertol'];
